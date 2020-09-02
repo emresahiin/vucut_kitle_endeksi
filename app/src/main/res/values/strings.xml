@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Vücut Kitle Endeksi</string>
+    <string name="Erkek">Erkek</string>
+    <string name="Kadın">Kadın</string>
+    <string name="boy_tv">Boy</string>
+
+    <string name="kilo_tv">Kilo</string>
+    <string name="cinsiyet_tv">Cinsiyet</string>
+    <string name="ideal_kilo_tv">İdeal Kilo</string>
+    <string name="durum">Durum</string>
+    <string name="zayif">Zayıf durumdasınız.</string>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_grid"
+    android:columnCount="2"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/boy_tv" />
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="3" >
+        <requestFocus/>
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/boy_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="8dp"
+        android:background="#00BCD4"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="@string/kilo_tv"
+        android:layout_gravity="right|center_vertical"/>
+
+    <TextView
+        android:id="@+id/kilo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:text="50 kg" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:progress="20"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/cinsiyet_tv" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:orientation="horizontal"
+        android:id="@+id/radioGrup"
+        android:layout_gravity="fill_horizontal">
+
+        <RadioButton
+            android:id="@+id/Erkek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Erkek" />
+    <RadioButton
+        android:id="@+id/Kadın"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Kadın"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/ideal_kilo_tv" />
+
+    <TextView
+        android:id="@+id/ideal_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:background="#03A9F4"
+        android:padding="@dimen/paddin_tv" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/durum" />
+
+    <TextView
+        android:id="@+id/durum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:background="#07FFCD"
+        android:padding="@dimen/paddin_tv" />
+
+    <Space
+         />
+
+</GridLayout>
